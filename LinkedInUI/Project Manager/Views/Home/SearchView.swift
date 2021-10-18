@@ -29,8 +29,8 @@ struct SearchView: View {
             }
             .padding()
             .frame(height: 40)
-            .background(Color.init(hex: "f6f6f6"))
-            .cornerRadius(5)
+            .background(Color.init(hex: "f5f5f5"))
+            .cornerRadius(8)
             
             Button(action: {}, label: {
                 Image("message")

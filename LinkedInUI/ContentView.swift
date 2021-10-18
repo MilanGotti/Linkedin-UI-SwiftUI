@@ -17,8 +17,9 @@ struct ContentView: View {
                     Image(systemName: "house.fill")
                     Text("Home")
                 }
+                
             
-            Text("")
+            NetworkView()
                 .tabItem {
                     Image(systemName: "person.2.fill")
                     Text("My Network")
@@ -42,6 +43,8 @@ struct ContentView: View {
                     Text("Jobs")
                 }
         }
+        .accentColor(.black)
+        
     }
 }
 

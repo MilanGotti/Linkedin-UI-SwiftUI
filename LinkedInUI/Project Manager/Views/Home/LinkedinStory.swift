@@ -16,8 +16,9 @@ struct LinkedinStory: View {
                     ZStack(alignment: .center) {
                         Image("profile")
                             .resizable()
+                            .scaledToFill() 
                             .frame(width: 70, height: 70)
-                            .cornerRadius(35)
+                            .clipShape(Circle())
                             .padding(.top, 10)
                         
                         Image("Add")
@@ -35,7 +36,7 @@ struct LinkedinStory: View {
                     StoryProvider(imageName: story.imageName, personName: story.personName)
                 }
             }
-        }.padding(.leading, 8)
+        }.padding([.leading, .top], 8)
     }
 }
 

@@ -21,28 +21,34 @@ struct PostView: View {
                         .clipShape(Circle())
                     
                     VStack(alignment: .leading) {
-                        Text("Arvind Patel")
-                            .bold()
-                            .foregroundColor(Color.getTextColor())
+                        Text("Milan Goti")
+                            .font(.callout)
+                            .fontWeight(.bold)
+                            .foregroundColor(Color.black)
                         
-                        Text("iOS Developr | Swift | Objective C | SwiftUI")
-                            .font(Font.custom("Avenir-Bold", size: 13))
-                            .foregroundColor(.gray)
+                        Text("iOS Developr | SwiftUI | Swift | Flutter")
+                            .font(.caption)
+                            .foregroundColor(.black)
+                        HStack {
+                            Text("2d •")
+                                .font(.subheadline)
+                                .foregroundColor(.black)
+                            Image(systemName: "globe.americas.fill")
+                                .foregroundColor(.black)
+                                .offset(x: -5, y: 0)
+                        }
                         
-                        Text("2d . Edited 🌐")
-                            .font(Font.custom("Avenir-Bold", size: 13))
-                            .foregroundColor(.gray)
                     }
                     Spacer()
                     Button(action: {}, label: {
                         Image(systemName: "ellipsis")
-                            .font(Font.custom("Avenir-Bold", size: 20))
-                            .foregroundColor(Color.getTextColor())
+                            .font(.headline)
+                            .foregroundColor(Color.black)
                     })
                 }
                 Text("Happy Sunday 👋 guys! Today I've redesigned Linkedin for you in SwiftUI. You will find the Source code of this project on my GitHub, go to the below link and download it. https://lnkd.in/eX4jSVP")
-                    .font(.system(size: 15, weight: .medium))
-                    .foregroundColor(Color.gray)
+                    .font(.subheadline)
+                    .foregroundColor(Color.black)
                     .padding(.top)
             }
             .padding()
@@ -65,10 +71,10 @@ struct PostView: View {
             .padding()
         }
         .background(Color.white)
-        .cornerRadius(15)
-        .padding([.horizontal, .bottom])
-        .shadow(color: Color.black.opacity(0.4), radius: 10, x: 0, y: 0)
-        .shadow(color: Color.white.opacity(0.9), radius: 10, x: 0, y: 0)
+        //.cornerRadius(15)
+        //.padding(.bottom)
+        //.shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 0)
+        //.shadow(color: Color.white.opacity(0.9), radius: 10, x: 0, y: 0)
         
     }
 }

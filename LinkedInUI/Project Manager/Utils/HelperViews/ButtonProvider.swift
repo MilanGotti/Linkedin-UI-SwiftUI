@@ -37,8 +37,9 @@ struct PostLikeButton: View {
                 Image("like-button")
                     .resizable()
                     .frame(width: 20, height: 20)
-                Text("945+")
+                Text("Like")
                     .font(Font.custom("Avenir-Bold", size: 14))
+                    .foregroundColor(Color.blue)
                     .padding(.leading, 0)
             }
         })

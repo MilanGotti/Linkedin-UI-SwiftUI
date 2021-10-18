@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE3E230C271DE64E00911274 /* NetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E230B271DE64E00911274 /* NetworkView.swift */; };
 		EE7B7174271C4A7300A7FF30 /* LinkedInUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B7173271C4A7300A7FF30 /* LinkedInUIApp.swift */; };
 		EE7B7176271C4A7300A7FF30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B7175271C4A7300A7FF30 /* ContentView.swift */; };
 		EE7B7178271C4A7700A7FF30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7B7177271C4A7700A7FF30 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE3E230B271DE64E00911274 /* NetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkView.swift; sourceTree = "<group>"; };
 		EE7B7170271C4A7300A7FF30 /* LinkedInUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkedInUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7B7173271C4A7300A7FF30 /* LinkedInUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedInUIApp.swift; sourceTree = "<group>"; };
 		EE7B7175271C4A7300A7FF30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +48,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE3E2309271DE61B00911274 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EE7B718F271C4C8E00A7FF30 /* HomeView.swift */,
+				EE7B7192271C4CC600A7FF30 /* SearchView.swift */,
+				EE7B7194271C4CE500A7FF30 /* PostView.swift */,
+				EE7B7196271C4D0900A7FF30 /* LinkedinStory.swift */,
+				EE7B7198271C4D2400A7FF30 /* StoryProvider.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EE3E230A271DE62D00911274 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EE3E230B271DE64E00911274 /* NetworkView.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		EE7B7167271C4A7300A7FF30 = {
 			isa = PBXGroup;
 			children = (
@@ -119,11 +141,8 @@
 		EE7B718E271C4C7B00A7FF30 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EE7B718F271C4C8E00A7FF30 /* HomeView.swift */,
-				EE7B7192271C4CC600A7FF30 /* SearchView.swift */,
-				EE7B7194271C4CE500A7FF30 /* PostView.swift */,
-				EE7B7196271C4D0900A7FF30 /* LinkedinStory.swift */,
-				EE7B7198271C4D2400A7FF30 /* StoryProvider.swift */,
+				EE3E230A271DE62D00911274 /* Network */,
+				EE3E2309271DE61B00911274 /* Home */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,6 +220,7 @@
 				EE7B7195271C4CE500A7FF30 /* PostView.swift in Sources */,
 				EE7B7176271C4A7300A7FF30 /* ContentView.swift in Sources */,
 				EE7B7188271C4B8D00A7FF30 /* ColorConstants.swift in Sources */,
+				EE3E230C271DE64E00911274 /* NetworkView.swift in Sources */,
 				EE7B7174271C4A7300A7FF30 /* LinkedInUIApp.swift in Sources */,
 				EE7B7190271C4C8E00A7FF30 /* HomeView.swift in Sources */,
 				EE7B7197271C4D0900A7FF30 /* LinkedinStory.swift in Sources */,

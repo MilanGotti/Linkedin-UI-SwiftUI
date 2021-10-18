@@ -17,8 +17,9 @@ struct StoryProvider: View {
             ZStack {
                 Image(imageName)
                     .resizable()
+                    .scaledToFill()
                     .frame(width: 70, height: 70)
-                    .cornerRadius(35)
+                    .clipShape(Circle())
                 
                 Circle()
                     .stroke(Color.blue, lineWidth: 5)
