@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PostView: View {
     var postImageName: String
-    
+    var buttonAction: () -> () = {}
     var body: some View {
         VStack(spacing: 0) {
             VStack(alignment: .leading) {
@@ -40,7 +40,9 @@ struct PostView: View {
                         
                     }
                     Spacer()
-                    Button(action: {}, label: {
+                    Button(action: {
+                        self.buttonAction()
+                    }, label: {
                         Image(systemName: "ellipsis")
                             .font(.headline)
                             .foregroundColor(Color.black)
@@ -55,20 +57,47 @@ struct PostView: View {
             Image(postImageName)
                 .resizable()
                 .scaledToFit()
+            VStack {
+                HStack(alignment: .center) {
+                    HStack(alignment: .center, spacing: 5){
+                        Image("like-button")
+                            .resizable()
+                            .frame(width: 15, height: 15)
+                        Image("heart")
+                            .resizable()
+                            .frame(width: 15, height: 15)
+                        Text("101")
+                            .font(.subheadline)
+                            .fontWeight(.semibold)
+                    }
+                    Spacer()
+                    
+                    Text("81 Comment")
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.gray)
+                }
+                
+                Divider()
+                    .padding(.bottom, 10)
+                    
+                HStack {
+                    PostLikeButton { }
+                    Spacer()
+                    
+                    PosrCommentButton { }
+                    Spacer()
+                    
+                    PostButtonProvider(imageName: "arrowshape.turn.up.right", text: "Share") {}
+                    Spacer()
+                    
+                    PostButtonProvider(imageName: "paperplane", text: "Send") {}
+                }
+                
+            }.padding()
             
-            HStack {
-                PostLikeButton { }
-                Spacer()
-                
-                PosrCommentButton { }
-                Spacer()
-                
-                PostButtonProvider(imageName: "arrowshape.turn.up.right", text: "Share") {}
-                Spacer()
-                
-                PostButtonProvider(imageName: "paperplane", text: "Send") {}
-            }
-            .padding()
+            
+            
         }
         .background(Color.white)
         //.cornerRadius(15)

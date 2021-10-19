@@ -22,7 +22,7 @@ struct StoryProvider: View {
                     .clipShape(Circle())
                 
                 Circle()
-                    .stroke(Color.blue, lineWidth: 5)
+                    .stroke(Color.init(hex: "0178B3"), lineWidth: 5)
                     .frame(width: 80, height: 80)
                     .cornerRadius(40)
             }

@@ -20,10 +20,11 @@ struct NetworkView: View {
                 ScrollView(.vertical, showsIndicators: false) {
                     LazyVGrid(columns: [GridItem(.flexible(minimum: 0, maximum: .infinity)), GridItem(.flexible(minimum: 0, maximum: .infinity))], spacing: 20) {
                         ForEach((0...9999), id: \.self) { _ in
-                            ZStack{
-                                Color.red
+                            VStack{
+                                
                             }
-                            .frame(height: 200)
+                            .cornerRadius(10)
+                            .frame(height: 230)
                         }
                     }
                 }

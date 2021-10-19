@@ -18,6 +18,8 @@ struct PostButtonProvider: View {
             
             VStack {
                 Image(systemName: imageName)
+                    .resizable()
+                    .frame(width: 17, height: 17)
                 Text(text)
                     .font(Font.custom("Avenir-Bold", size: 14))
                     .padding(.leading, 0)
@@ -36,10 +38,10 @@ struct PostLikeButton: View {
             VStack {
                 Image("like-button")
                     .resizable()
-                    .frame(width: 20, height: 20)
+                    .frame(width: 17, height: 17)
                 Text("Like")
                     .font(Font.custom("Avenir-Bold", size: 14))
-                    .foregroundColor(Color.blue)
+                    .foregroundColor(Color.init(hex: "0178B3"))
                     .padding(.leading, 0)
             }
         })
@@ -56,7 +58,7 @@ struct PosrCommentButton: View {
             VStack {
                 Image("comment")
                     .resizable()
-                    .frame(width: 20, height: 20)
+                    .frame(width: 17, height: 17)
                 Text("200")
                     .font(Font.custom("Avenir-Bold", size: 14))
                     .padding(.leading, 0)

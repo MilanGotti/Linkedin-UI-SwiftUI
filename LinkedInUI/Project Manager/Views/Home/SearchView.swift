@@ -12,7 +12,7 @@ struct SearchView: View {
     
     var body: some View {
         
-        HStack(spacing: 10) {
+        HStack(alignment: .center,spacing: 10) {
             
             Image("profile")
                 .resizable()
@@ -35,7 +35,7 @@ struct SearchView: View {
             Button(action: {}, label: {
                 Image("message")
                     .resizable()
-                    .frame(width: 28, height: 28)
+                    .frame(width: 25, height: 22)
             })
         }
         .padding()
