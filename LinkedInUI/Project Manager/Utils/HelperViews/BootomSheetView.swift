@@ -10,8 +10,8 @@ import SwiftUI
 
 fileprivate enum Constants {
     static let radius: CGFloat = 16
-    static let indicatorHeight: CGFloat = 6
-    static let indicatorWidth: CGFloat = 60
+    static let indicatorHeight: CGFloat = 4
+    static let indicatorWidth: CGFloat = 120
     static let snapRatio: CGFloat = 0.25
     static let minHeightRatio: CGFloat = 0.0
 }
@@ -67,9 +67,7 @@ struct BottomSheetView<Content: View>: View {
                     guard abs(value.translation.height) > snapDistance else {
                         return
                     }
-                    withAnimation {
-                        self.isOpen = value.translation.height < 0
-                    }
+                    self.isOpen = value.translation.height < 0
                 }
             )
         }
