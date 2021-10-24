@@ -41,9 +41,9 @@ struct StoryModel: Identifiable {
 
 func getUserStory() -> [StoryModel] {
     return [StoryModel(imageName: "linkedin-circle", personName: "Linkedin"),
-            StoryModel(imageName: "image2", personName: "Emma Tem"),
-            StoryModel(imageName: "image3", personName: "Sophia Kim"),
-            StoryModel(imageName: "image4", personName: "Amelia Dev"),
+            StoryModel(imageName: "image2", personName: "Emmy Ted"),
+            StoryModel(imageName: "image3", personName: "Jemmy Kim"),
+            StoryModel(imageName: "image4", personName: "Amelia kia"),
             StoryModel(imageName: "image5", personName: "Mia Jones"),]
 }
 

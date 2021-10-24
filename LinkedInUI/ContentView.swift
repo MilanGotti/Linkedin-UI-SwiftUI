@@ -50,15 +50,15 @@ struct ContentView: View {
                     }
             }
             .accentColor(.black)
-            BottomSheetView(isOpen: $isOpenMenu, maxHeight: 650) {
+            BottomSheetView(isOpen: $isOpenMenu, maxHeight: 600) {
                 List(self.optionsList, id: \.id) { option in
                     OptionsView(option: option)
-                        .listRowSeparator(.hidden)
                         .listRowBackground(Color(.secondarySystemBackground))
                 }
                 .listStyle(.plain)
                 .onAppear {
                     UITableView.appearance().isScrollEnabled = false
+                    UITableView.appearance().separatorColor = .clear
                 }
                 
             }.edgesIgnoringSafeArea(.all)
@@ -82,7 +82,6 @@ struct Options: Identifiable {
 struct OptionsView: View {
     var option: Options
     var body: some View {
-        
         HStack(alignment: .center, spacing: 20){
             Image(systemName: self.option.image)
                 .resizable()
@@ -90,7 +89,7 @@ struct OptionsView: View {
                 .frame(width: 22, height: 22)
             VStack(alignment: .leading, spacing: 5) {
                 Text(self.option.title)
-                    .font(.title3)
+                    .font(.headline)
                     .fontWeight(.bold)
                     .foregroundColor(.black.opacity(0.7))
                 if self.option.detail != "" {

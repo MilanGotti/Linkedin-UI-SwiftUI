@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 fileprivate enum Constants {
-    static let radius: CGFloat = 16
+    static let radius: CGFloat = 20
     static let indicatorHeight: CGFloat = 4
     static let indicatorWidth: CGFloat = 120
     static let snapRatio: CGFloat = 0.25
@@ -76,7 +76,7 @@ struct BottomSheetView<Content: View>: View {
 
 struct BottomSheetView_Previews: PreviewProvider {
     static var previews: some View {
-        BottomSheetView(isOpen: .constant(false), maxHeight: 600) {
+        BottomSheetView(isOpen: .constant(false), maxHeight: 500) {
             Rectangle().fill(Color.red)
         }.edgesIgnoringSafeArea(.all)
     }
